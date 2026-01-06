@@ -6,6 +6,8 @@ import { SplitText } from 'gsap/SplitText'
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText)
 
+const BASE_URL = import.meta.env.BASE_URL
+
 function Navbar() {
   return (
     <header className="w-full">
@@ -68,7 +70,7 @@ function Section3() {
       <h2 className="heading">Masterbeat</h2>
       <div className="content-wrapper">
         <video width="500" height="auto" autoPlay loop muted className="radius">
-          <source src="/images/video.mp4" type="video/mp4" />
+          <source src={`${BASE_URL}images/video.mp4`} type="video/mp4" />
         </video>
         <div className="content">
           <p>
@@ -90,9 +92,9 @@ function Section3() {
 function Section4() {
   return (
     <div id="section4">
-      <img src="/images/img1.jpeg" alt="" className="img1 radius" />
-      <img src="/images/img2.jpeg" alt="" className="img2 radius" />
-      <img src="/images/img3.jpeg" alt="" className="img3 radius" />
+      <img src={`${BASE_URL}images/img1.jpeg`} alt="" className="img1 radius" />
+      <img src={`${BASE_URL}images/img2.jpeg`} alt="" className="img2 radius" />
+      <img src={`${BASE_URL}images/img3.jpeg`} alt="" className="img3 radius" />
     </div>
   )
 }
@@ -103,12 +105,12 @@ function Section5() {
       <h2 className="heading">Top Picks</h2>
       <div className="product-section">
         <div className="product">
-          <img src="/images/blue.png" alt="" />
+          <img src={`${BASE_URL}images/blue.png`} alt="" />
           <div className="name">Audira Elite</div>
           <div className="price">$14,999</div>
         </div>
         <div className="product">
-          <img src="/images/black.png" alt="" />
+          <img src={`${BASE_URL}images/black.png`} alt="" />
           <div className="name">Audira One</div>
           <div className="price">$4,499</div>
         </div>
@@ -117,7 +119,7 @@ function Section5() {
           <div className="price">$7,499</div>
         </div>
         <div className="product">
-          <img src="/images/brown.png" alt="" />
+          <img src={`${BASE_URL}images/brown.png`} alt="" />
           <div className="name">Audira Max Pro</div>
           <div className="price">$11,499</div>
         </div>
@@ -129,7 +131,7 @@ function Section5() {
 function Section6() {
   return (
     <div id="section6" className="w-full">
-      <img src="/images/img4.jpg" className="radius" alt="" />
+      <img src={`${BASE_URL}images/img4.jpg`} className="radius" alt="" />
       <div className="content-wrapper">
         <h2 className="heading">Pure Escape</h2>
         <p>
@@ -152,8 +154,8 @@ function Footer() {
     <footer className="w-full">
       <span className="logo-text">Beatz</span>
       <div className="social">
-        <a href=""><img src="/images/fb.png" alt="" /></a>
-        <a href=""><img src="/images/insta.png" alt="" /></a>
+        <a href=""><img src={`${BASE_URL}images/fb.png`} alt="" /></a>
+        <a href=""><img src={`${BASE_URL}images/insta.png`} alt="" /></a>
       </div>
     </footer>
   )
