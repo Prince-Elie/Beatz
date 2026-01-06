@@ -330,7 +330,7 @@ export default function App() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <div id="main" className="w-full">
-            <img src="/images/green.png" alt="" id="headphone" />
+            <img src={`${BASE_URL}images/green.png`} alt="" id="headphone" />
             <Section1 />
             <Section2 />
             <Section3 />
